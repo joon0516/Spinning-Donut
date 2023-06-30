@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Spinner</title>
+    <link rel="icon" href="./images/3D-Torus-Wireframe-Prismatic.svg">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+  <!--Nav bar-->
+  <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-1">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-auto link-body-emphasis text-decoration-none">
+          <span class="fs-4"><img src="./images/3D-Torus-Wireframe-Prismatic.svg" height="50"></span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <div class="form-check form-switch px-0 mb-0 align-self-center">
+              <input id="dark-mode-switch" class="form-check-input mx-0 my-0" type="checkbox" role="switch">
+          </div>
+        </ul>
+      </header>
+  </div>
+
+  
+
+  <div id="main_container" class="container">
+
+    <div id="container1">
+      <!--screen-->
+      <pre id="screen"></pre>
+
+      <div id="container2">
+        <!--Pause button-->
+        <div id="pause-btn">
+            <button id="pause-btn-input" class="btn btn-primary" type="button">Stop</button>
+        </div>
+        <!--slide bar-->
+        <div id="slide-bar">
+            <label class="form-label">Speed</label>
+            <input id="slide-input" type="range" class="form-range">
+        </div>
+      </div>
+    </div>
+
+    <!--buttons-->
+    <ul id="buttons">
+        <li>
+            <div class="form-check">
+                <input id="donut" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Torus
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check">
+                <input id="cube" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Cube
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check">
+                <input id="complex-cube" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Complex Cube
+                </label>
+            </div>
+        </li>
+    </ul>
+
+  </div>
+
+
+
+  <!--footer-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary">Created by Joonhyuk Ko</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a href="https://github.com/joon0516"><img src="./images/github.svg" width="24" height="24"></a></li>
+        <li class="ms-3"><a href="https://www.linkedin.com/in/joonhyuk-ko"><img src="./images/linkedin.svg" width="24" height="24"></a></li>
+        <li class="ms-3"><a href="mailto: tah3af@virginia.edu"><img src="./images/envelope-fill.svg" width="24" height="24"></a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
